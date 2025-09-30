@@ -1,10 +1,26 @@
+:root {
+    --text: antiquewhite;
+    --main-accent: darkslategray;
+    --secondary-accent: rgb(88, 132, 132);
+    --background: rgb(51, 51, 51);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: antiquewhite;
+        --main-accent: rgb(124, 141, 141);
+        --secondary-accent: rgb(79, 155, 155);
+        --background: rgb(116, 116, 116);
+}
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
-    color: antiquewhite;
+    color: var(--text);
 }
 
 body {
-    background-color: rgb(51, 51, 51);
+    background-color: var(--background);
 }
 
 .header {
@@ -17,10 +33,10 @@ body {
 
 .header-button {
     padding: 10px;
-    background-color: darkslategray;
+    background-color: var(--main-accent);
     border: none;
     border-radius: 15px;
-    color: antiquewhite;
+    color: var(--text);
     font-size: 1em;
 }
 
@@ -32,7 +48,7 @@ footer {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: darkslategray;
+    background-color: var(--main-accent);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -54,17 +70,17 @@ footer {
     align-items: center;
     border-radius: 15px;
     justify-content: center;
-    background-color: darkslategray;
+    background-color: var(--main-accent);
     
 }
 
 .grid-button {
     padding: 10px;
-    background-color: rgb(88, 132, 132);
+    background-color: var(--secondary-accent);
     border: none;
     border-radius: 15px;
     width: 40%;
-    color: antiquewhite;
+    color: var(--text);
     margin: 10px;
 }
 
