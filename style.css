@@ -36,3 +36,21 @@ footer {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    max-width: 500px;
+    column-gap: 1em;
+    row-gap: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-item {
+    display: flex;
+    border: 1px solid antiquewhite;
+    border-radius: 15px;
+    justify-content: center;
+}
