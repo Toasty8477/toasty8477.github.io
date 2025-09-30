@@ -50,7 +50,20 @@ footer {
 
 .grid-item {
     display: flex;
-    border: 1px solid antiquewhite;
+    flex-flow: column;
+    align-items: center;
     border-radius: 15px;
     justify-content: center;
+    background-color: darkslategray;
+    
+}
+
+.grid-button {
+    padding: 10px;
+    background-color: rgb(88, 132, 132);
+    border: none;
+    border-radius: 15px;
+    width: 40%;
+    color: antiquewhite;
+    margin: 10px;
 }
