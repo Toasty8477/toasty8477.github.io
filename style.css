@@ -11,7 +11,7 @@
         --main-accent: rgb(124, 141, 141);
         --secondary-accent: rgb(79, 155, 155);
         --background: rgb(116, 116, 116);
-}
+    }
 }
 
 html {
@@ -55,9 +55,9 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 20px;
-    max-width: 500px;
+    max-width: 750px;
     column-gap: 1em;
     row-gap: 1em;
     margin-left: auto;
@@ -71,7 +71,7 @@ footer {
     border-radius: 15px;
     justify-content: center;
     background-color: var(--main-accent);
-    
+    padding: 1em;
 }
 
 .grid-button {
@@ -87,4 +87,10 @@ footer {
 .compact {
     max-height: 200px;
     overflow-y: hidden;
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }

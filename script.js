@@ -10,3 +10,12 @@ const expand = (id) => {
         button.innerHTML = "Show Less";
     }
 }
+
+const bottomMargin = () => {
+    footerHeight = document.getElementsByTagName("footer")[0].clientHeight;
+    document.getElementsByClassName("grid-container")[0].style.marginBottom = `${footerHeight + 15}px`
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    bottomMargin()
+});
