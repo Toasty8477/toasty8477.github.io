@@ -25,18 +25,36 @@
                 <h3>Personal Website</h3>
                 <p id="project1" class="compact">You're looking at it!<br><br>
                     Uses vanilla HTML, CSS, and JavaScript to implement all functionality on the page.
-
                 </p>
                 <button class="grid-button" onclick="expand('#project1');">Show More</button>
             </div>
             <div class="grid-item">
-                <h3>foobar</h3>
-                <p id="project2" class="compact">foobar</p>
+                <h3>Image Manipulator 3000</h3>
+                <p id="project2" class="compact">An image manipulator that can read and write
+                    custom file extentions and apply custom filters.<br><br>
+                    Written as part of the Data Structures course at MSOE.
+                    Image Manipulator 3000 was written in Java and JavaFX to create a two
+                    window interface. The program reads the common jpeg and png formats as
+                    well as two custom formats .msoe, a plain text format, and .bmsoe, a binary format.
+                    The program was created as part of two labs near the beginning of the course
+                    to apply the JavaFX SceneBuilder and create a more complex GUI as well as practicing
+                    file IO from the end of Into to Software Development. You can find the code in
+                    <a href="https://github.com">this repo</a> under the lab3 folder.
+                </p>
                 <button class="grid-button" onclick="expand('#project2');">Show More</button>
             </div>
             <div class="grid-item">
-                <h3>foobar</h3>
-                <p id="project3" class="compact">foobar</p>
+                <h3>Home Assistant MQTT Remote</h3>
+                <p id="project3" class="compact">A simple device that connects to 
+                    <a href="https://home-assistant.io/">Home Assistant</a> using the MQTT protocol.<br><br>
+                    One of my first physical projects and the first one with any kind
+                    of documentation. MQTT Remote uses micropython running on an Espressif ESP8266,
+                    specificaly a Wemos D1 Mini, to read the states of some buttons and a 
+                    potentiometer and sends them to Home Assistant over MQTT. I created this before
+                    really getting into <a href="https://esphome.io/">ESPHome</a> which is what most
+                    of my projects have been based on since. Originially I intended to create some
+                    kind of case for the device but never got around to it.
+                </p>
                 <button class="grid-button" onclick="expand('#project3');">Show More</button>
             </div>
         </div>
