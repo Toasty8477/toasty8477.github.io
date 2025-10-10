@@ -27,6 +27,10 @@ body {
     text-align: center;
 }
 
+a {
+    color: rgb(75, 207, 252)
+}
+
 .header {
     display: inline-block;
     align-content: center;
@@ -59,7 +63,7 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: 20px;
     max-width: 750px;
     column-gap: 1em;
@@ -91,6 +95,33 @@ footer {
 .compact {
     max-height: 200px;
     overflow-y: hidden;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#image {
+    max-width: 300px;
+    border: 5px var(--main-accent) solid;
+    border-radius: 25px;
+
+}
+
+#name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#pronouns {
+    position: relative;
+    bottom: 15px;
+}
+
+#about-text {
+    max-width: 500px;
 }
 
 @media (max-width: 480px) {
