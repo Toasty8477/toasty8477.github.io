@@ -97,14 +97,37 @@ footer {
     overflow-y: hidden;
 }
 
-.about {
+.flex {
     display: flex;
     justify-content: space-evenly;
     margin: 10px;
 }
 
+.flex-vertical {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.project-button {
+    padding: 10px;
+    background-color: var(--main-accent);
+    border: none;
+    border-radius: 15px;
+    color: var(--text);
+    font-size: 1em;
+    margin: 5px;
+    min-width: 15rem;
+}
+
+button:hover {
+    background-color: var(--secondary-accent);
+}
+
 #image {
     max-width: 300px;
+    max-height: 339px;
     border: 5px var(--main-accent) solid;
     border-radius: 25px;
 
@@ -131,5 +154,10 @@ footer {
     
     .grid-button {
         width: 35%;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
     }
 }

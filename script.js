@@ -13,7 +13,12 @@ const expand = (id) => {
 
 const bottomMargin = () => {
     footerHeight = document.getElementsByTagName("footer")[0].clientHeight;
-    document.getElementsByClassName("grid-container")[0].style.marginBottom = `${footerHeight + 15}px`
+    if (document.getElementsByClassName("grid-container").length > 0) {
+        document.getElementsByClassName("grid-container")[0].style.marginBottom = `${footerHeight + 15}px`
+    }
+    if (document.getElementsByClassName("flex").length > 0) {
+        document.getElementsByClassName("flex")[0].style.marginBottom = `${footerHeight + 15}px`
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
