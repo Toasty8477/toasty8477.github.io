@@ -164,6 +164,10 @@ button:hover {
     .grid-container {
         grid-template-columns: 1fr;
     }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
     
     .grid-button {
         width: 35%;
@@ -172,5 +176,11 @@ button:hover {
     .flex {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 480px) {
+    .home-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
