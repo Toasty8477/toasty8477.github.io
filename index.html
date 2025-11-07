@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="en-US">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Alex Horton</title>
     </head>
 
     <body>
-        <h1>Under Construction</h1>
+        <div class="header">
+            <h1 class="header-text">Alex Horton</h1>
+            <a href="index.html">
+                <button class="header-button">Home</button>
+            </a>
+            <a href="projects.html">
+                <button class="header-button">Projects</button>
+            </a>
+            <a href="about.html">
+                <button class="header-button">About Me</button>
+            </a>
+        </div>
+        <div class="flex-vertical">
+            <div>
+                <p><span id="name">About Me</span></p>
+                <p id="about-text">Hey, I'm Alex! I'm currently a second year student at
+                    Milwaukee School of Engineering pursuing a bachelors in Software Engineering
+                    and expecting to graduate in 2028. When I'm not in class I serve as the
+                    Vice President of SAGA and run registration for
+                    <a href="https://concinnitycon.weebly.com/">Concinnity</a>.</p>
+            </div>
+            <div class="flex-vertical">
+                <h2>Things I've Made</h2>
+                <div class="home-grid">
+                    <a href="https://github.com/Toasty8477/school-code/tree/master/csc-1120/labs/lab-4">
+                        <button class="project-button">Image Manipulator 3000</button>
+                    </a>
+                    <a href="https://github.com/Toasty8477/MQTT-Remote" target="_blank">
+                        <button class="project-button">MQTT Remote</button>
+                    </a>
+                    <a href="https://github.com/Toasty8477/movie-night-voter" target="_blank">
+                        <button class="project-button">Movie Voter</button>
+                    </a>
+                    <a href="https://github.com/Toasty8477/esphome-plant-monitor" target="_blank">
+                        <button class="project-button">ESPHome Plant Monitor</button>
+                    </a>
+                    <a href="https://github.com/Toasty8477/Hello-World" target="_blank">
+                        <button class="project-button">SSD1306 Micropython Demo</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>Written by hand using VS Code</footer>
     </body>
 </html>

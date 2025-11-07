@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en-US">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Alex Horton</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 class="header-text">Alex Horton</h1>
+            <a href="index.html">
+                <button class="header-button">Home</button>
+            </a>
+            <a href="projects.html">
+                <button class="header-button">Projects</button>
+            </a>
+            <a href="about.html">
+                <button class="header-button">About Me</button>
+            </a>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Personal Website</h3>
+                <p id="project1" class="compact">You're looking at it!<br><br>
+                    Uses vanilla HTML, CSS, and JavaScript to implement all functionality on the page.
+                </p>
+                <button class="grid-button" onclick="expand('#project1');">Show More</button>
+            </div>
+            <div class="grid-item">
+                <h3>Image Manipulator 3000</h3>
+                <p id="project2" class="compact">An image manipulator that can read and write
+                    custom file extentions and apply custom filters.<br><br>
+                    Written as part of the Data Structures course at MSOE.
+                    Image Manipulator 3000 was written in Java and JavaFX to create a two
+                    window interface. The program reads the common jpeg and png formats as
+                    well as two custom formats .msoe, a plain text format, and .bmsoe, a binary format.
+                    The program was created as part of two labs near the beginning of the course
+                    to apply the JavaFX SceneBuilder and create a more complex GUI as well as practicing
+                    file IO from the end of Into to Software Development. You can find the code
+                    <a href="https://github.com/Toasty8477/school-code/tree/master/csc-1120/labs/lab-4" target="_blank">here</a>
+                    along with all the other code I've written for school.
+                </p>
+                <button class="grid-button" onclick="expand('#project2');">Show More</button>
+            </div>
+            <div class="grid-item">
+                <h3>Home Assistant MQTT Remote</h3>
+                <p id="project3" class="compact">A simple device that connects to 
+                    <a href="https://home-assistant.io/">Home Assistant</a> using the MQTT protocol.<br><br>
+                    One of my first physical projects and the first one with any kind
+                    of documentation. MQTT Remote uses micropython running on an Espressif ESP8266,
+                    specificaly a Wemos D1 Mini, to read the states of some buttons and a 
+                    potentiometer and sends them to Home Assistant over MQTT. I created this before
+                    really getting into <a href="https://esphome.io/">ESPHome</a> which is what most
+                    of my projects have been based on since. Originially I intended to create some
+                    kind of case for the device but never got around to it.
+                </p>
+                <button class="grid-button" onclick="expand('#project3');">Show More</button>
+            </div>
+            <div class="grid-item">
+                <h3>ESPHome Plant Monitor</h3>
+                <p id="project4" class="compact">A simple capacitive soil sensor monitor using ESPHome.<br><br>
+                    This is an ongoing project to build a plant monitor for cheap. I didn't want to spend
+                    tons on money on making custom PCBs or figuring out how to jam off the shelf components
+                    into a reasonably small case so I've routed all the sensors back to one device. Currently
+                    it just reads soil sensors but I am planning on adding light and temperature monitoring.
+                    The eventual goal is to make a somewhat modular design that anyone can use to make
+                    their own version of the project with whatever features they want. The only real limt
+                    at this point is the number of ADCs your device has. As well as soil moisture
+                    monitoring the device can also send notifications via Home Assistant.
+                </p>
+                <button class="grid-button" onclick="expand('#project4');">Show More</button>
+            </div>
+        </div>
+        <footer>Written by hand using VS Code</footer>
+    </body>
+</html>
